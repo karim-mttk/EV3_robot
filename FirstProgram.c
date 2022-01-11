@@ -12,7 +12,8 @@ task main()
 
 
 
-	while(getUSDistance(ultrasonic) >50){
+	while(getUSDistance(ultrasonic) >50)
+	{
 		playSoundFile("Analyze");
 		wait1Msec(100);
 		motor[leftMotor] = 20;
@@ -25,8 +26,8 @@ task main()
 
 		if(getUSDistance(ultrasonic) <30){
 			break;
-		}
 	}
+}
 
 	wait(1, seconds);
 	stopAllMotors();
@@ -41,15 +42,15 @@ task main()
 
 
 	playSoundFile("Forward");
-    motor[leftMotor]=50;
+        motor[leftMotor]=50;
 	motor[rightMotor]=51;
 	wait1Msec(10000);
 
 	
-    stopAllMotors();
-    wait(2, seconds);
+        stopAllMotors();
+        wait(2, seconds);
 	
-    playSoundFile("Backing alert");
+        playSoundFile("Backing alert");
 	motor[bookMotor]=30;
 	wait1Msec(7000);
 
