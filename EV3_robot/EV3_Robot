@@ -1,1 +1,3 @@
-
+These codes help the Lego robot to drop an object at a designated spot 
+and then come back to the original spot. These highlight the use of the gyroscope and the ultrasound sensor 
+to navigate.  
